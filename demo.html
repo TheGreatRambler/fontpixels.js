@@ -3,7 +3,21 @@
 <body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rot.js/0.6.0/rot.min.js"></script>
     <script src="fontpixels.js"></script>
-    <script>
+    <label>Text to input:
+  		<input type="text" id="text" onchange="drawtext()">
+	</label>
+    <label>Size of text:
+  		<input type="range" id="size" min="5" max="80" onchange="drawtext()">
+	</label>
+    <label>Font family:
+  		<input type="text" id="fontFamily" onchange="drawtext()">
+	</label>
+    <label>Lines:
+  		<input type="checkbox" id="lines" onchange="drawtext()">
+	</label>
+    <br>
+    <div id="container"></div>
+	<script>
         var text = document.getElementById("text");
         var sizeoftext = document.getElementById("size");
         var fontfamily = document.getElementById("fontFamily");
@@ -28,20 +42,6 @@
             });
         }
     </script>
-    <label>Text to input:
-  		<input type="text" id="text" onchange="drawtext()">
-	</label>
-    <label>Size of text:
-  		<input type="range" id="size" min="5" max="80" onchange="drawtext()">
-	</label>
-    <label>Font family:
-  		<input type="text" id="fontFamily" onchange="drawtext()">
-	</label>
-    <label>Lines:
-  		<input type="checkbox" id="lines" onchange="drawtext()">
-	</label>
-    <br>
-    <div id="container"></div>
 </body>
 
 </html>
