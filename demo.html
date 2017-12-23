@@ -4,7 +4,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rot.js/0.6.0/rot.min.js"></script>
     <script src="fontpixels.js"></script>
     <label>Text to input:
-  		<input type="text" id="text" onchange="drawtext()">
+  		<input type="text" id="text" onkeyup="drawtext()">
 	</label>
     <label>Size of text:
   		<input type="range" id="size" min="5" max="80" onchange="drawtext()">
