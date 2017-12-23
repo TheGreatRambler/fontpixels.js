@@ -18,8 +18,14 @@
 
 
         function drawtext() {
+            var values = {
+                text: text.value || "A",
+                sizeoftext: sizeoftext.value || 30,
+                fontfamily: fontfamily.value || "Courier New",
+                linesornot: linesornot.checked || false
+            };
             display.clear();
-            fontpixels.generatepixels(text.value, sizeoftext.value, fontfamily.value, linesornot.checked).forEach(function(value) {
+            fontpixels.generatepixels(values.text, values.sizeoftext, values.fontfamily, values.linesornot).forEach(function(value) {
                 display.draw(value.x, value.y, "X");
             });
         }
