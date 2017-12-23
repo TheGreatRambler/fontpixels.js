@@ -29,7 +29,6 @@
         context.font = fontstring;
         context.lineWidth = 0.3;
         context.clearRect(0, 0, canvas.width, canvas.height);
-        console.log(context.font, resolution);
         if (!lines || lines === false) {
             context.fillText(txt, 0, 0);
         } else {
