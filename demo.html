@@ -8,14 +8,12 @@
         var sizeoftext = document.getElementById("size");
         var fontfamily = document.getElementById("fontFamily");
         var linesornot = document.getElementById("lines");
-
         var display = new ROT.Display({
             width: 1000,
             height: 100,
             forceSquareRatio: true
         });
         document.getElementById("container").appendChild(display.getContainer());
-
 
         function drawtext() {
             var values = {
@@ -31,17 +29,17 @@
         }
     </script>
     <label>Text to input:
-  <input type="text" id="text" onchange="drawtext()">
-</label>
+  		<input type="text" id="text" onchange="drawtext()">
+	</label>
     <label>Size of text:
-  <input type="range" id="size" min="5" max="80" onchange="drawtext()">
-</label>
+  		<input type="range" id="size" min="5" max="80" onchange="drawtext()">
+	</label>
     <label>Font family:
-  <input type="text" id="fontFamily" onchange="drawtext()">
-</label>
+  		<input type="text" id="fontFamily" onchange="drawtext()">
+	</label>
     <label>Lines:
-  <input type="checkbox" id="lines" onchange="drawtext()">
-</label>
+  		<input type="checkbox" id="lines" onchange="drawtext()">
+	</label>
     <br>
     <div id="container"></div>
 </body>
