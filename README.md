@@ -5,7 +5,7 @@ Check out [this page](https://thegreatrambler.github.io/fontpixels.js/demo.html)
 ## API
 
 ```javascript
-var pixelarray = fontpixels.generatepixels(text, resolution, fontFamily, lines);
+var pixelarray = fontpixels.generatepixels(text, resolution, fontFamily, width, lines);
 ```
 
 ### text
