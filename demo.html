@@ -4,16 +4,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rot.js/0.6.0/rot.min.js"></script>
     <script src="fontpixels.js"></script>
     <label>Text to input:
-  		<input type="text" id="text" onkeyup="drawtext()">
+  		<input type="text" id="text" oninput="drawtext()">
 	</label>
     <label>Size of text:
-  		<input type="range" id="size" min="5" max="80" onchange="drawtext()">
+  		<input type="range" id="size" min="5" max="80" oninput="drawtext()">
 	</label>
 	<label>Line width:
-  		<input type="range" id="lineWidth" min="0" max="2" step="0.01" value="0.3" onchange="drawtext()">
+  		<input type="range" id="lineWidth" min="0" max="2" step="0.01" value="0.3" oninput="drawtext()">
 	</label>
     <label>Font family:
-  		<select id="fontFamily"onchange="drawtext()">
+  		<select id="fontFamily" oninput="drawtext()">
     <option value="Serif"> Serif </option>
     <option value="Arial"> Arial </option>
     <option value="Sans-Serif"> Sans-Serif </option>                                  
@@ -34,7 +34,7 @@
   </select>
 	</label>
     <label>Lines:
-  		<input type="checkbox" id="lines" onchange="drawtext()">
+  		<input type="checkbox" id="lines" oninput="drawtext()">
 	</label>
     <br> This demo is made with <a href="https://github.com/ondras/rot.js/">ROT.js</a>.
     <div id="container"></div>
