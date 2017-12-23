@@ -10,15 +10,21 @@
   		<input type="range" id="size" min="5" max="80" onchange="drawtext()">
 	</label>
     <label>Font family:
-  		<input type="text" id="fontFamily" onchange="drawtext()">
+  		<select id="fontFamily"onchange="drawtext()">
+    <option> Serif </option>
+    <option> Arial </option>
+    <option> Sans-Serif </option>                                  
+    <option> Tahoma </option>
+    <option> Verdana </option>
+    <option> Lucida Sans Unicode </option>                               
+  </select>
 	</label>
     <label>Lines:
   		<input type="checkbox" id="lines" onchange="drawtext()">
 	</label>
-    <br>
-	This demo is made with <a href="https://github.com/ondras/rot.js/">ROT.js</a>.
+    <br> This demo is made with <a href="https://github.com/ondras/rot.js/">ROT.js</a>.
     <div id="container"></div>
-	<script>
+    <script>
         var text = document.getElementById("text");
         var sizeoftext = document.getElementById("size");
         var fontfamily = document.getElementById("fontFamily");
@@ -27,7 +33,7 @@
             width: 1000,
             height: 100,
             forceSquareRatio: true,
-	    fontSize: 7
+            fontSize: 7
         });
         document.getElementById("container").appendChild(display.getContainer());
 
@@ -35,7 +41,7 @@
             var values = {
                 text: text.value || "A",
                 sizeoftext: sizeoftext.value || 30,
-                fontfamily: fontfamily.value || "Courier New",
+                fontfamily: fontfamily.options[fontfamily.selectedIndex].text || "Courier New",
                 linesornot: linesornot.checked || false
             };
             display.clear();
