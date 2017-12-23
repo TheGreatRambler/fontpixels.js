@@ -28,7 +28,7 @@ Resolution determines both the size of the output and the detail of the output. 
 ### fontFamily
 
 ```javascript
-fontFamily = "Times New Romans";
+fontFamily = "Times New Roman";
 ```
 Font of the text. Make sure font is loaded before you call `fontpixels.generatepixels()`. I would recommend [WebFont](https://github.com/typekit/webfontloader) for a font loader.
 
