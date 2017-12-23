@@ -8,12 +8,15 @@
     }
 }(typeof self !== 'undefined' ? self : this, function() {
     var fontpixels = {}
-    fontpixels.generatepixels = function(txt, resolution, fontFamily, lines) {
+    fontpixels.generatepixels = function(txt, resolution, fontFamily, width, lines) {
         if (!resolution) {
             resolution = 30;
         }
         if (!fontFamily) {
             fontFamily = "Times New Roman";
+        }
+        if (!width) {
+            width = 0.3;
         }
         var canvas = document.createElement("canvas");
         var context = canvas.getContext("2d");
@@ -27,7 +30,7 @@
         canvas.height = resolution;
         context.textBaseline = "hanging";
         context.font = fontstring;
-        context.lineWidth = 0.3;
+        context.lineWidth = width;
         context.clearRect(0, 0, canvas.width, canvas.height);
         if (!lines || lines === false) {
             context.fillText(txt, 0, 0);
