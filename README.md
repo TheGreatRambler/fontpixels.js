@@ -32,6 +32,13 @@ fontFamily = "Times New Roman";
 ```
 Font of the text. Make sure font is loaded before you call `fontpixels.generatepixels()`. I would recommend [WebFont](https://github.com/typekit/webfontloader) for a font loader.
 
+### width
+
+```javascript
+width = 0.3;
+```
+Line width of the text. Values between 0 and 1 are usually sufficient. Corresponds to canvas `ctx.lineWidth` property.
+
 ### lines
 
 ```javascript
