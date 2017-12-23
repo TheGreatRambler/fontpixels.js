@@ -37,7 +37,7 @@ Font of the text. Make sure font is loaded before you call `fontpixels.generatep
 ```javascript
 width = 0.3;
 ```
-Line width of the text. Values between 0 and 1 are usually sufficient. Corresponds to canvas `ctx.lineWidth` property.
+Line width of the text. Values between 0 and 1 are usually sufficient. Only works when `lines` is set to true. Corresponds to canvas `ctx.lineWidth` property.
 
 ### lines
 
