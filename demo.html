@@ -11,12 +11,23 @@
 	</label>
     <label>Font family:
   		<select id="fontFamily"onchange="drawtext()">
-    <option> Serif </option>
-    <option> Arial </option>
-    <option> Sans-Serif </option>                                  
-    <option> Tahoma </option>
-    <option> Verdana </option>
-    <option> Lucida Sans Unicode </option>                               
+    <option value="Serif"> Serif </option>
+    <option value="Arial"> Arial </option>
+    <option value="Sans-Serif"> Sans-Serif </option>                                  
+    <option value="Tahoma"> Tahoma </option>
+    <option value="Verdana"> Verdana </option>
+    <option value="Lucida Sans Unicode"> Lucida Sans Unicode </option>
+    <option value="Times New Roman"> Times New Roman </option>
+    <option value="Helvetica"> Helvetica </option>
+    <option value="Courier New"> Courier New </option>
+    <option value="Courier"> Courier </option>
+    <option value="Georgia"> Georgia </option>
+    <option value="Palatino"> Palatino </option>
+    <option value="Garamond"> Garamond </option>
+    <option value="Bookman"> Bookman </option>
+    <option value="Comic Sans MS">--&gt; Comic Sans MS &lt--</option>
+    <option value="Trebuchet MS"> Trebuchet MS </option>\
+    <option value="Impact"> Impact </option>
   </select>
 	</label>
     <label>Lines:
@@ -41,7 +52,7 @@
             var values = {
                 text: text.value || "A",
                 sizeoftext: sizeoftext.value || 30,
-                fontfamily: fontfamily.options[fontfamily.selectedIndex].text || "Courier New",
+                fontfamily: fontfamily.value || "Courier New",
                 linesornot: linesornot.checked || false
             };
             display.clear();
