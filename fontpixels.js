@@ -28,7 +28,7 @@
 
         context.font = fontstring;
         canvas.width = context.measureText(txt).width;
-        canvas.height = resolution;
+        canvas.height = resolution * 2;
         context.textBaseline = "top";
         context.font = fontstring;
         context.lineWidth = width;
