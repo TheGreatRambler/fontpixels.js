@@ -8,7 +8,7 @@
         root.fontpixels = factory();
     }
 }(typeof self !== 'undefined' ? self : this, function() {
-    var fontpixels = {}
+    var fontpixels = {};
     fontpixels.generatepixels = function(txt, resolution, fontFamily, width, lines) {
         if (!resolution) {
             resolution = 30;
@@ -41,7 +41,7 @@
 
         data32 = new Uint32Array(context.getImageData(0, 0, canvas.width, canvas.height).data.buffer);
         for (i = 0; i < data32.length; i++) {
-            if (data32[i] & 0xff000000) { // check alpha mask
+            if (data32[i] & 0xff000000) {
                 pixels.push({
                     x: (i % canvas.width),
                     y: ((i / canvas.width) | 0)
