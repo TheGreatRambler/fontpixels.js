@@ -1,4 +1,15 @@
-// FontPixels.js by TheGreatRambler https://github.com/TheGreatRambler/fontpixels.js/
+/*
+ *  ______          _         _          _       _     
+ * |  ____|        | |       (_)        | |     (_)    
+ * | |__ ___  _ __ | |_ _ __  ___  _____| |___   _ ___ 
+ * |  __/ _ \| '_ \| __| '_ \| \ \/ / _ \ / __| | / __|
+ * | | | (_) | | | | |_| |_) | |>  <  __/ \__ \_| \__ \
+ * |_|  \___/|_| |_|\__| .__/|_/_/\_\___|_|___(_) |___/
+ *                     | |                     _/ |    
+ *                     |_|                    |__/     
+ * FontPixels.js by TheGreatRambler https://github.com/TheGreatRambler/fontpixels.js/
+ * MIT License
+ */
 (function(root, factory) {
     if (typeof define === 'function' && define.amd) {
         define([], factory);
